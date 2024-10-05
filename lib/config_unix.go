@@ -14,7 +14,7 @@ import (
 	"reflect"
 
 	"github.com/urfave/cli"
-	"launchpad.net/go-xdg/v0"
+	//"launchpad.net/go-xdg/v0"
 )
 
 const (
@@ -250,10 +250,10 @@ func getConfigFilename(context *cli.Context) (string, bool) {
 		return absCF, true
 	}
 
-	if xdgCF, err := xdg.Config.Find(cf); err == nil {
-		// File exists in an XDG directory.
-		return xdgCF, true
-	}
+	//if xdgCF, err := xdg.Config.Find(cf); err == nil {
+	//	// File exists in an XDG directory.
+	//	return xdgCF, true
+	//}
 
 	// Default to relative path. This is probably what the user expects if
 	// it wasn't found anywhere else.
