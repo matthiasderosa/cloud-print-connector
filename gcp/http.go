@@ -17,8 +17,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/cloud-print-connector/lib"
-	"github.com/google/cloud-print-connector/log"
+	"github.com/matthiasderosa/cloud-print-connector/lib"
+	"github.com/matthiasderosa/cloud-print-connector/log"
 
 	"golang.org/x/oauth2"
 )
